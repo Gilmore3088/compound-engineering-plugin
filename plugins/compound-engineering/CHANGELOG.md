@@ -5,7 +5,11 @@ All notable changes to the compound-engineering plugin will be documented in thi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.20.0] - 2026-01-01
+## [2.20.0] - 2026-01-05
+
+### Added
+
+- **`/feature-video` command** - Record video walkthroughs of features using Playwright. Captures screenshots during browser interactions, generates GIF/MP4 videos, supports upload to transfer.sh or manual upload, and automatically updates PR descriptions with embedded demos. Perfect for documenting UI changes in pull requests.
 
 ### Changed
 
@@ -16,6 +20,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Added `references/official-spec.md` - Anthropic's official skill specification from code.claude.com/docs/en/skills
   - Added `references/best-practices.md` - Skill authoring best practices from platform.claude.com
   - Removed obsolete `references/use-xml-tags.md` - this was incorrect guidance
+
+### Removed
+
+- **`dhh-ruby-style` skill** - Merged into `dhh-rails-style` skill. All content consolidated into the single comprehensive Rails style guide.
 
 ### Philosophy
 
@@ -103,11 +111,6 @@ These updates operationalize a key insight from building agent-native mobile app
   - **architecture.md** - Added path-based multi-tenancy, database patterns (UUIDs, state as records, hard deletes, counter caches), background job patterns (transaction safety, error handling, batch processing), email patterns, security patterns (XSS, SSRF, CSP), Active Storage patterns
   - **gems.md** - Added expanded what-they-avoid section (service objects, form objects, decorators, CSS preprocessors, React/Vue), testing philosophy with Minitest/fixtures patterns
 
-- **`dhh-ruby-style` skill** - Expanded patterns.md with:
-  - Development philosophy (ship/validate/refine, fix root causes, vanilla Rails first)
-  - Rails 7.1+ idioms (params.expect, StringInquirer, positive naming conventions)
-  - Extraction guidelines (rule of three, start in controller extract when complex)
-
 ### Credits
 
 - Reference patterns derived from [Marc Köhlbrugge's Unofficial 37signals Coding Style Guide](https://github.com/marckohlbrugge/unofficial-37signals-coding-style-guide)
@@ -116,10 +119,10 @@ These updates operationalize a key insight from building agent-native mobile app
 
 ### Fixed
 
-- **All skills** - Fixed spec compliance issues across 13 skills:
+- **All skills** - Fixed spec compliance issues across 12 skills:
   - Reference files now use proper markdown links (`[file.md](./references/file.md)`) instead of backtick text
   - Descriptions now use third person ("This skill should be used when...") per skill-creator spec
-  - Affected skills: agent-native-architecture, andrew-kane-gem-writer, compound-docs, create-agent-skills, dhh-rails-style, dhh-ruby-style, dspy-ruby, every-style-editor, file-todos, frontend-design, gemini-imagegen
+  - Affected skills: agent-native-architecture, andrew-kane-gem-writer, compound-docs, create-agent-skills, dhh-rails-style, dspy-ruby, every-style-editor, file-todos, frontend-design, gemini-imagegen
 
 ### Added
 

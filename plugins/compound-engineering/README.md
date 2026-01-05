@@ -8,7 +8,7 @@ AI-powered development tools that get smarter with every use. Make each unit of 
 |-----------|-------|
 | Agents | 27 |
 | Commands | 20 |
-| Skills | 13 |
+| Skills | 12 |
 | MCP Servers | 2 |
 
 ## Agents
@@ -98,6 +98,7 @@ Core workflow commands use `workflows:` prefix to avoid collisions with built-in
 | `/triage` | Triage and prioritize issues |
 | `/playwright-test` | Run browser tests on PR-affected pages |
 | `/xcode-test` | Build and test iOS apps on simulator |
+| `/feature-video` | Record video walkthroughs and add to PR description |
 
 ## Skills
 
@@ -114,7 +115,7 @@ Core workflow commands use `workflows:` prefix to avoid collisions with built-in
 | `andrew-kane-gem-writer` | Write Ruby gems following Andrew Kane's patterns |
 | `compound-docs` | Capture solved problems as categorized documentation |
 | `create-agent-skills` | Expert guidance for creating Claude Code skills |
-| `dhh-ruby-style` | Write Ruby/Rails code in DHH's 37signals style |
+| `dhh-rails-style` | Write Ruby/Rails code in DHH's 37signals style |
 | `dspy-ruby` | Build type-safe LLM applications with DSPy.rb |
 | `frontend-design` | Create production-grade frontend interfaces |
 | `skill-creator` | Guide for creating effective Claude Code skills |
